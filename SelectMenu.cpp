@@ -1,4 +1,3 @@
-// Select Menu 
 #include "SelectMenu.h"
 #include "PrintMenu.h"
 #include <iostream>
@@ -7,24 +6,20 @@
 using namespace std;
 
 /*
-
+	simple safety input stream in cpp 
 	char firstName[4];
-	cin >> setw(4) >> firstName;
-	saft input stream;
+	cin >> setw(4) >> firstName;	
 */
 
 namespace input
 {
 	void SelectMenu()
 	{
-		char string[512];
-		int maxLength = 512;
-
-
+		char string[20];
+		//in menu max length is not over 20 size
 		cout << "Select Menu" << endl;
-		cin >> setw(512) >> string;
+		cin >> setw(20) >> string;
+		//select something in menu
 		example::StoredData(string);
-
-
 	}
 }
